@@ -1,0 +1,87 @@
+body{
+    font-family:Arial,sans-serif;
+    background:#eef3ff;
+    margin:0;
+    padding:20px;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+}
+
+h1{
+    text-align:center;
+    color:#2146d0;
+}
+
+h2{
+    color:#2146d0;
+    margin-top:25px;
+}
+
+input,textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+textarea{
+    height:90px;
+}
+
+button{
+    background:#2146d0;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#1837a8;
+}
+
+.hidden{
+    display:none;
+}
+
+.card{
+    background:#f5f8ff;
+    padding:15px;
+    border-radius:10px;
+    margin-top:15px;
+    border-left:6px solid #2146d0;
+}
+
+.rating{
+    font-size:22px;
+    font-weight:bold;
+    color:green;
+}
+
+.task{
+    background:#ffffff;
+    border:1px solid #ddd;
+    padding:15px;
+    border-radius:10px;
+    margin:10px 0;
+}
+
+.accept{
+    background:green;
+    margin-right:10px;
+}
+
+.reject{
+    background:red;
+}

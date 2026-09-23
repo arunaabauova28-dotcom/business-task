@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Task Rating Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Business Task Rating Platform</h1>
+    <p>AI Sana Hackathon MVP</p>
+
+    <h2>1. Бизнес тапсырмасын енгізу</h2>
+
+    <input type="text" id="title" placeholder="Тапсырма атауы">
+
+    <textarea id="description" placeholder="Мәселені сипаттаңыз"></textarea>
+
+    <button onclick="showQuestions()">AI сұрақтарын алу</button>
+
+    <!-- AI сұрақтары -->
+    <div id="questions" class="hidden">
+
+        <h2>2. AI нақтылаушы сұрақтары</h2>
+
+        <label>Жүйені кім қолданады?</label>
+        <input type="text" id="users">
+
+        <label>Қандай деректер енгізіледі?</label>
+        <input type="text" id="data">
+
+        <label>Күтілетін нәтиже қандай?</label>
+        <input type="text" id="result">
+
+        <button onclick="createCard()">Карточка құру</button>
+
+    </div>
+
+    <!-- Карточка -->
+    <div id="card" class="hidden">
+
+        <h2>3. Бизнес карточкасы</h2>
+
+        <div id="cardContent"></div>
+
+        <button onclick="publishTask()">Каталогқа жариялау</button>
+
+    </div>
+
+    <!-- Каталог -->
+    <div id="catalog" class="hidden">
+
+        <h2>4. Ортақ каталог</h2>
+
+        <div id="taskList"></div>
+
+    </div>
+
+    <!-- Команда ұсынысы -->
+    <div id="proposal" class="hidden">
+
+        <h2>5. Команда ұсынысы</h2>
+
+        <input type="text" id="teamName" placeholder="Команда атауы">
+
+        <textarea id="idea" placeholder="Шешім идеясы"></textarea>
+
+        <button onclick="sendProposal()">Ұсыныс жіберу</button>
+
+    </div>
+
+    <!-- Бизнес таңдауы -->
+    <div id="businessChoice" class="hidden">
+
+        <h2>6. Бизнес таңдауы</h2>
+
+        <div id="proposalList"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
